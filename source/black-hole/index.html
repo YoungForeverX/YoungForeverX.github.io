@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Galaxy</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.css">
+  <style>
+    .aplayer-container {
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            z-index: 9999;
+        }
+    #aplayer {
+            border-radius: 15px; /* 设置圆角的大小，根据需要调整 */
+        }
+  </style>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="experience"></div>
+<!-- partial -->
+<div id="aplayer" class="aplayer-container"></div>
+<script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.js"></script>
+<script>
+  const ap1 = new APlayer({
+      container: document.getElementById('aplayer'),
+      mini: true, 
+      autoplay: true,
+      theme: '#FADFA3',
+      loop: 'all',
+      preload: 'auto',
+      listmaxheight: '80px',
+      music: [
+          {
+              title: 'Cornfield Chase',
+              author: 'Your Music Artist',
+              url: 'https://cdn.youngforever.fun/【音乐欣赏】Cornfield Chase（原野追逐） - 1.1660791612515.mp4(Av602121062,P1) 00_00_00-00_02_0411111.mp3',
+              cover: 'http://cdn.youngforever.fun/QQ截图20240107215246.png'
+
+          }
+          // Add more music entries as needed
+      ]
+  });
+</script>
+  <script  src="https://cdn.youngforever.fun/script.js"></script>
+
+</body>
+</html>

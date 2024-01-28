@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C罗</title>
+    <link rel="stylesheet" href="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.css">
+    <style>
+        body{
+    cursor: url(https://cdn.youngforever.fun/normal.cur),
+        default;
+}
+img{
+    cursor: url(https://cdn.youngforever.fun/normal.cur),
+        default;
+}
+a{
+    cursor: url(https://cdn.youngforever.fun/normal.cur),
+        default;
+}
+div{
+    cursor: url(https://cdn.youngforever.fun/normal.cur),
+        default;
+}
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .shell{
+            width: 100%;
+            position: relative;
+            padding: 80px 0;
+            transition:0.3s ease 0s;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        .shell:before{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(99, 99, 99, 0.8);
+            content: "";
+        }
+        .header{
+            width: 100%;
+            text-align: center;
+            margin-bottom: 80px;
+            position: relative;
+        }
+        .title{
+            color: #fff;
+            font-size: 50px;
+            font-weight: normal;
+            font-family: Papyrus;
+            margin: 0 ;
+        }
+        .timeline{
+            display: flex;
+            margin: 0 auto;
+            flex-wrap: wrap;
+            flex-direction: column;
+            max-width: 700px;
+            position: relative;
+        }
+        .content-title{
+            font-weight: normal;
+            font-size: 66px;
+            margin: -10px 0 0 0;
+            transition: 0.4s;
+            padding: 0 10px;
+            box-sizing: border-box;
+            color: #fff;
+        }
+        .content-desc{
+            margin: 0;
+            font-size: 15px;
+            box-sizing: border-box;
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 25px;
+        }
+        .timeline:before{
+            position: absolute;
+            left: 50%;
+            width: 2px;
+            height: 100%;
+            margin-left: -1px;
+            content: "";
+            background:rgba(255, 255, 255, 0.07);
+        }
+        .item{
+            padding: 40px 0;
+            opacity: 0.3;
+            filter: blur(2px);
+            transition: 0.5s;
+            box-sizing: border-box;
+            width:calc(50% - 40px);
+            display: flex;
+            position: relative;
+            transform: translateY(-80px);
+        }
+        .item:before{
+            content:attr(data-text);
+            letter-spacing: 3px;
+            width: 100%;
+            position: absolute;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 13px;
+            border-left: 2px solid rgba(255, 255, 255, 0.5);
+            top: 70%;
+            margin-top: -5px;
+            padding-left: 15px;
+            opacity: 0;
+            right: calc(-100% - 56px);
+            font: 900 20px '';
+            letter-spacing: 5px;
+        }
+        .item:nth-child(even){
+            align-self: flex-end;
+        }
+        .item:nth-child(even)::before{
+            right: auto;
+            text-align: right;
+            left: calc(-100% - 56px);
+            padding-left: 0;
+            border-left: none;
+            border-right: 2px solid rgba(255, 255, 255, 0.5);
+            padding-right: 15px;
+        }
+        .item--active{
+            opacity: 1;
+            transform: translateY(0);
+            filter: blur(0px);
+        }
+        .item--active:before{
+            top:50%;
+            transition: 0.3s all 0.2s;
+            opacity: 1;
+        }
+        .item--active .content-title{
+            margin: -50px 0 20px 0;
+        }
+        .img{
+            max-width: 100%;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+        }
+        .subtitle{
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 16px;
+            letter-spacing: 5px;
+            margin: 10px 0 0 0;
+            font-weight: normal;
+        }
+        .footer{
+            padding: 95px 0;
+            display: inline-block;
+        }
+        
+        .aplayer-container {
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            z-index: 9999;
+        }
+
+        #aplayer {
+            border-radius: 15px; /* 设置圆角的大小，根据需要调整 */
+        }
+        @media only screen and (max-width:767px){
+            .item{
+                align-self: baseline !important;
+                width: 100%;
+                padding:0 30px 150px 80px;
+            }
+            .item:before{
+                left:10px !important;
+                padding: 0 !important;
+                top: 50px;
+                text-align: center !important;
+                width: 60px;
+                border: none !important;
+            }
+            .item:last-child{
+                padding-bottom: 40px;
+            }
+        }
+        @media only screen and (max-width:767px){
+            .timeline:before{
+                left: 40px;
+            }
+        }
+
+        
+    </style>
+    
+</head>
+<body>
+    <div class="shell" id="shell">
+        <div class="header">
+            <br>
+            <h2 class="title">Cristiano Ronaldo</h2>
+        </div>
+        <div class="timeline">
+            <div class="item" data-text="- 欧冠三连的开端 -">
+                <div class="content">
+                    <img src="https://cdn.youngforever.fun/uc6ZhVQrzpomTWd.jpg" alt="" class="img">
+                    <h2 class="content-title">2015</h2>
+                    <p class="content-desc">
+                        3:2逆转狼堡，带领皇马实现欧冠三连的第一冠，拿到第三座金球奖，那年的你，风华正茂
+                    </p>
+                </div>
+            </div>
+
+            <div class="item" data-text="- 欧冠卫冕 -">
+                <div class="content">
+                    <img src="https://cdn.youngforever.fun/QQ%E5%9B%BE%E7%89%8720231215000943.jpg" alt="" class="img">
+                    <h2 class="content-title">2016</h2>
+                    <p class="content-desc">
+                        决赛梅开二度，再次登顶欧洲之巅，拿到第四座金球奖，那年的你，不可阻挡。
+                    </p>
+                </div>
+            </div>
+
+            <div class="item" data-text="- 欧冠三连 -">
+                <div class="content">
+                    <img src="http://cdn.youngforever.fun/QQ图片20240106231543.jpg" alt="" class="img">
+                    <h2 class="content-title">2017</h2>
+                    <p class="content-desc">
+                        欧冠三连，当之无愧的欧冠之王，那年的你，举世无双。
+                    </p>
+                </div>
+            </div>
+
+            <div class="item" data-text="- 惊天倒钩 -">
+                <div class="content">
+                    <img src="https://cdn.youngforever.fun/QQ%E5%9B%BE%E7%89%8720231215000949.jpg" alt="" class="img">
+                    <h2 class="content-title">2017</h2>
+                    <p class="content-desc">
+                        惊天倒钩，世界欠你一座普斯卡什。
+                    </p>
+                </div>
+            </div>
+
+            <div class="item" data-text="《123》">
+                <div class="content">
+                    <img src="http://cdn.youngforever.fun/wp12396730-cyberpunk-edgerunners-4k-wallpapers.jpg" alt="" class="img">
+                    <h2 class="content-title">2002</h2>
+                    <p class="content-desc">
+                        如果你停止，就是谷底，如果你还在继续，
+                        就是上坡，这是我听过关于人生谷底最好的阐述
+                    </p>
+                </div>
+            </div>
+
+            
+
+            <div class="item" data-text="《123》">
+                <div class="content">
+                    <img src="http://cdn.youngforever.fun/wallhaven-zm76oj.jpg" alt="" class="img">
+                    <h2 class="content-title">2002</h2>
+                    <p class="content-desc">
+                        如果你停止，就是谷底，如果你还在继续，
+                        就是上坡，这是我听过关于人生谷底最好的阐述
+                    </p>
+                </div>
+            </div>
+
+            <div class="item" data-text="《123》">
+                <div class="content">
+                    <img src="http://cdn.youngforever.fun/wallhaven-8586my.png" alt="" class="img">
+                    <h2 class="content-title">2002</h2>
+                    <p class="content-desc">
+                        如果你停止，就是谷底，如果你还在继续，
+                        就是上坡，这是我听过关于人生谷底最好的阐述
+                    </p>
+                </div>
+            </div>
+
+            <div class="item" data-text="《123》">
+                <div class="content">
+                    <img src="http://cdn.youngforever.fun/girl_headphones_anime_1079499_1280x720.jpg" alt="" class="img">
+                    <h2 class="content-title">2002</h2>
+                    <p class="content-desc">
+                        如果你停止，就是谷底，如果你还在继续，
+                        就是上坡，这是我听过关于人生谷底最好的阐述
+                    </p>
+                </div>
+            </div>
+
+            <div class="item" data-text="《123》">
+                <div class="content">
+                    <img src="http://cdn.youngforever.fun/girl_headphones_anime_1079499_1280x720.jpg" alt="" class="img">
+                    <h2 class="content-title">Next……</h2>
+                    <p class="content-desc">
+                        如果你停止，就是谷底，如果你还在继续，
+                        就是上坡，这是我听过关于人生谷底最好的阐述
+                    </p>
+                </div>
+            </div>
+            <div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+    </div>
+    <div id="aplayer" class="aplayer-container"></div>
+    <script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.js"></script>
+    <script>
+        const ap = new APlayer({
+            container: document.getElementById('aplayer'),
+            mini: true, 
+            autoplay: true,
+            theme: '#FADFA3',
+            loop: 'all',
+            preload: 'auto',
+            listmaxheight: '80px',
+            music: [
+                {
+                    title: 'swear it again',
+                    author: 'Your Music Artist',
+                    url: 'https://cdn.youngforever.fun/%E3%80%904K%E4%BF%AE%E5%A4%8D%E3%80%91%20%E8%A5%BF%E5%9F%8E%E7%94%B7%E5%AD%A9%20WESTLIFE%20-%20Swear%20It%20Again%20%E3%80%90%E4%B8%AD%E8%8B%B1%E5%AD%97%E5%B9%95%E3%80%91%E3%80%90%E9%AB%98%E5%93%81%E8%B4%A8%E9%9F%B3%E9%A2%91%20-%201.Swear%20It%20Again_5.00x_3800x2120_alq-12(Av762947164,P1).mp3',
+                    cover: 'https://p2.music.126.net/LIUC0d9P7kyYV-gvxYrwEw==/18905002928175645.jpg?param=130y130'
+
+                }
+                // Add more music entries as needed
+            ]
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>
+
+        (function($){
+            $.fn.timeline= function (){
+                var selectors = {
+                    id: $(this),
+                    item: $(this).find(".item"),
+                    activeClass: "item--active",
+                    img: ".img"
+                };
+                selectors.item.eq(0).addClass(selectors.activeClass);
+                selectors.id.css(
+                    "background-image",
+                    "url(" +
+                    selectors.item.first()
+                        .find(selectors.img)
+                        .attr("src") + 
+                     ")"
+                );
+                var itemLength = selectors.item.length;
+                $(window).scroll(function(){
+                    var max, min;
+                    var pos= $(this).scrollTop();
+                    selectors.item.each(function(i){
+                        min= $(this).offset().top;
+                        max= $(this).height() + $(this).offset().top;
+                        var that = $(this);
+                        if(i == itemLength - 2 && pos > min + $(this).height / 2){
+                            selectors.item.removeClass(selectors.activeClass);
+                            selectors.id.css(
+                                "background-image",
+                                "url(" +
+                                selectors.item.last()
+                                    .find(selectors.img)
+                                    .attr("src") +
+                                ")"
+                            );
+                            selectors.item.last().addClass(selectors.activeClass);
+                        }
+                        else if(pos <= max - 10 && pos >= min){
+                            selectors.id.css(
+                                "background-image",
+                                "url(" +
+                                $(this)
+                                    .find(selectors.img)
+                                    .attr("src") +
+                                ")"
+                            );
+                            selectors.item.removeClass(selectors.activeClass);
+                            $(this).addClass(selectors.activeClass);
+                        }
+                    });
+                });
+            };
+        })(jQuery)
+    $("#shell").timeline();
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>收藏馆</title>
+    <style>
+        
+        body{
+    cursor: url(https://cdn.youngforever.fun/normal.cur),
+        default;
+}
+img{
+    cursor: url(https://cdn.youngforever.fun/normal.cur),
+        default;
+}
+a{
+    cursor: url(https://cdn.youngforever.fun/normal.cur),
+        default;
+}
+div{
+    cursor: url(https://cdn.youngforever.fun/normal.cur),
+        default;
+}
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+            background: url("http://cdn.youngforever.fun/H7A6gi3ZBs9n2Fr.webp") center/cover no-repeat;
+            overflow: hidden;
+        }
+        h3 {
+            font-size: 2em; /* 调整标题字体大小 */
+            text-align: center; /* 文本居中对齐 */
+            color: white; /* 文本颜色 */
+            margin-top: 20px; /* 顶部外边距，调整标题与顶部的间距 */
+        }
+        /* 定义外层容器样式 */
+        .shell {
+            position: relative;
+            /* 相对定位 */
+            width: 60vw;
+            /* 宽度占视口宽度的60% */
+            height: 40vw;
+            /* 高度占视口高度的40% */
+            max-width: 380px;
+            /* 最大宽度为380像素 */
+            max-height: 250px;
+            /* 最大高度为250像素 */
+            margin: 0;
+            /* 外边距为0 */
+            color: white;
+            /* 字体颜色为白色 */
+            perspective: 1000px;
+            /* 透视效果，观察者与z=0平面的距离 */
+            transform-origin: center;
+            /* 变形原点为中心 */
+        }
+        
+        /* 定义内容容器样式 */
+        .content {
+            display: flex;
+            /* 设置为弹性盒子布局 */
+            justify-content: center;
+            /* 主轴居中对齐 */
+            align-items: center;
+            /* 交叉轴居中对齐 */
+            position: absolute;
+            /* 绝对定位 */
+            width: 100%;
+            /* 宽度100% */
+            height: 100%;
+            /* 高度100% */
+            transform-origin: center;
+            /* 变形原点为中心 */
+            transform-style: preserve-3d;
+            /* 保持3D变换 */
+            transform: translateZ(-30vw) rotateY(0);
+            /* 变换：沿z轴平移-30vw，绕y轴旋转0度 */
+            animation: carousel 9s infinite cubic-bezier(0.77, 0, 0.175, 1) forwards;
+            /* 动画：名称为carousel，持续时间9秒，无限循环，缓动函数为cubic-bezier(0.77, 0, 0.175, 1)，动画结束后保持最后状态 */
+        }
+        .content:hover {
+            animation-play-state: paused; /* 当鼠标悬停时暂停动画 */
+        }
+
+        /* 定义项目样式 */
+        .item {
+            position: absolute;
+            /* 绝对定位 */
+            width: 60vw;
+            /* 宽度占视口宽度的60% */
+            height: 40vw;
+            /* 高度占视口高度的40% */
+            max-width: 380px;
+            /* 最大宽度为380像素 */
+            max-height: 250px;
+            /* 最大高度为250像素 */
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+            /* 设置阴影 */
+            border-radius: 6px;
+            
+            /* 边框圆角半径为6像素 */
+            background-size: cover;
+            /* 背景图片等比例缩放并覆盖整个容器 */
+            -webkit-box-reflect: below 25px -webkit-linear-gradient(transparent 50%, rgba(255, 255, 255, 0.3));
+            /* 创建倒影效果 */
+        }
+
+        /* 第一个项目样式 */
+        .item:nth-child(1) {
+            background-image: url(http://cdn.youngforever.fun/a4s7PDJ9qlA1otk.jpg);
+            /* 背景图片为01.jpg */
+            transform: rotateY(0) translateZ(35vw);
+            /* 变换：绕y轴旋转0度，沿z轴平移35vw */
+        }
+
+        /* 第二个项目样式 */
+        .item:nth-child(2) {
+            background-image: url(http://cdn.youngforever.fun/flowers_petals_pink_1081797_1280x720.jpg);
+            /* 背景图片为02.jpg */
+            transform: rotateY(120deg) translateZ(35vw);
+            /* 变换：绕y轴旋转120度，沿z轴平移35vw */
+        }
+
+        /* 第三个项目样式 */
+        .item:nth-child(3) {
+            background-image: url(http://cdn.youngforever.fun/v2-813329af8e8960125cf489bb296d9b8a_r.jpg);
+            /* 背景图片为03.jpg */
+            transform: rotateY(240deg) translateZ(35vw);
+            /* 变换：绕y轴旋转240度，沿z轴平移35vw */
+        }
+
+        /* 定义动画 */
+        @keyframes carousel {
+
+            0%,
+            17.5% {
+                transform: translateZ(-35vw) rotateY(0);
+                /* 变换：沿z轴平移-35vw，绕y轴旋转0度 */
+            }
+
+            27.5%,
+            45% {
+                transform: translateZ(-35vw) rotateY(-120deg);
+                /* 变换：沿z轴平移-35vw，绕y轴旋转-120度 */
+            }
+
+            55%,
+            72.5% {
+                transform: translateZ(-35vw) rotateY(-240deg);
+                /* 变换：沿z轴平移-35vw，绕y轴旋转-240度 */
+            }
+
+            82.5%,
+            100% {
+                transform: translateZ(-35vw) rotateY(-360deg);
+                /* 变换：沿z轴平移-35vw，绕y轴旋转-360度 */
+            }
+        }
+        .item-text {
+            position: absolute;
+            top: 12%;
+            left: 10%;
+            transform: translate(-50%, -50%);
+            z-index: 2; /* 确保文字在图片上方 */
+            color: white;
+            font-size: 1.5em; /* 根据需要调整文字大小 */
+            opacity: 0;
+            font-weight: bold;
+            transition: opacity 0.3s ease; /* 添加渐变效果 */
+        }
+        .item-text1 {
+            position: absolute;
+            top: 32%;
+            left: 36.5%;
+            transform: translate(-50%, -50%);
+            z-index: 2; /* 确保文字在图片上方 */
+            color: white;
+            font-size: 1.0em; /* 根据需要调整文字大小 */
+            opacity: 0;
+            font-weight: bold;
+            transition: opacity 0.3s ease; /* 添加渐变效果 */
+        }
+        .item-text2 {
+            position: absolute;
+            top: 32%;
+            left: 35.7%;
+            transform: translate(-50%, -50%);
+            z-index: 2; /* 确保文字在图片上方 */
+            color: white;
+            font-size: 1.0em; /* 根据需要调整文字大小 */
+            opacity: 0;
+            font-weight: bold;
+            transition: opacity 0.3s ease; /* 添加渐变效果 */
+        }
+        .item:hover .item-text {
+            opacity: 1;
+        }
+        .item:hover .item-text1 {
+            opacity: 1;
+        }
+        .item:hover .item-text2 {
+            opacity: 1;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* 半透明黑色背景 */
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .item:hover .overlay {
+            opacity: 1;
+            filter: brightness(1%);
+        }
+        .item a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-decoration: none; /* 去除超链接的下划线样式 */
+    z-index: 3; /* 确保超链接在文字上方 */
+}
+    </style>
+</head>
+
+<body>
+    <h3 class="title">收 藏 馆</h3>
+    <div class="shell">
+        <div class="content">
+            <div class="item">
+                <a href="../fun" style="display: block; width: 100%; height: 100%;"></a>
+                <div class="item-text">C罗</div>
+                <div class="item-text1">此页主要展示作者收藏的C罗球衣，价值不凡</div>
+                <div class="overlay"></div>
+            </div>
+            <div class="item">
+                <a href="../生活/index.html" style="display: block; width: 100%; height: 100%;"></a>
+                <div class="item-text">日常</div>
+                <div class="item-text2">此页主要展示作者去过的地方、生活碎片等</div>
+                <div class="overlay"></div>
+            </div>
+            <div class="item">
+                <a href="../wallpaper/index.html" style="display: block; width: 100%; height: 100%;"></a>
+                <div class="item-text">壁纸</div>
+                <div class="item-text2">此页主要展示作者喜欢的壁纸，值得收藏</div>
+                <div class="overlay"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript 代码
+        var content = document.querySelector('.content');
+
+        content.addEventListener('mouseenter', function () {
+            content.style.animationPlayState = 'paused';
+        });
+
+        content.addEventListener('mouseleave', function () {
+            content.style.animationPlayState = 'running';
+        });
+    </script>
+</body>
