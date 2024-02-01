@@ -9,6 +9,16 @@ tags:
 - 前端
 ---
 
+## 清除默认样式
+
+```css
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+```
+
 ## 伪类结构选择器
 
 **E:first-child 选择器 :** E 表示 HTML 标签类型 , 该选择器 选择 匹配的父容器 中的 第一个 E 类型标签 子元素 ;
@@ -212,6 +222,10 @@ box-shadow: 2px 5px 10px 1px rgba(0,0,0,0.5);
 
 ## Flex布局
 
+```css
+display: flex;
+```
+
 ### 简介
 
 Flex 是 `Flexible Box` 的缩写，意为"弹性布局"，用来为盒状模型提供最大的灵活性。布局的传统解决方案，基于盒模型，依赖 display 属性 + position属性 + float属性。它对于那些特殊布局非常不方便，比如，垂直居中就不容易实现。而Flex 布局，可以简便、完整、响应式地实现各种页面布局。目前，它已经得到了所有浏览器的支持。任何一个容器都可以指定为 Flex 布局。
@@ -395,7 +409,11 @@ vertical-align: bottom;		底部对齐
 
 ·也可以把图片变成行内块
 
-	## transition(过渡)
+```css
+display: block;
+```
+
+## transition(过渡)
 
 ```css
 img{
@@ -408,6 +426,52 @@ img:hover{
     height: 400px;
 }
 ```
+
+## transition(过渡效果)
+
+```css
+<style>
+	img{
+		width: 200px;
+		height: 150px;
+		transition: all 1s;
+	}
+	img:hover{
+		width: 500px;
+		height: 400px;
+	}
+</style>
+```
+
+这段代码表示，当鼠标悬停在img上时，img的大小会变大，耗时1s
+
+## opacity(透明度)
+
+```css
+opacity: 1;			/*表示完全不透明*/
+opacity: 0;			/*表示完全透明*/
+opacity: 0.5;		/*表示半透明*/
+```
+
+## cursor
+
+```css
+cursor: pointer;	/*小手，表示可以点击*/
+cursor: text;		/*工字型，表示可以选择文字*/
+cursor: move;		/*十字，表示可以移动*/
+```
+
+## ul嵌套li,取消默认的点
+
+```css
+li{
+	list-style: none;
+}
+```
+
+
+
+
 
 
 
