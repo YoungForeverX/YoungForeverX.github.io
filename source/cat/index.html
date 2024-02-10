@@ -133,6 +133,14 @@
         alert("没有之前的页面"); // 如果没有之前的页面，则显示警告
     }
     });
+    document.getElementById("backLink").addEventListener("click", function(event) {
+    event.preventDefault(); // 阻止默认行为，即阻止超链接的跳转
+    if(document.referrer) {
+        window.location.href = document.referrer; // 将当前页面的 URL 设置为之前页面的 URL
+    } else {
+        alert("没有之前的页面"); // 如果没有之前的页面，则显示警告
+    }
+    });
     </script>
 </body>
 </html>

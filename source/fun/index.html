@@ -191,7 +191,29 @@ div{
                 left: 40px;
             }
         }
-
+        #backLink {
+            position: absolute;
+            top: 14px;
+            left: 40px;
+            font-size: 15px;
+            text-decoration: none;
+            color: #eee;
+        }
+    @font-face {
+            font-family: 'iconfont';
+            src: url('./font_4434862_8ui1uj2mpfk/iconfont.woff2') format('woff2'),
+                url('./font_4434862_8ui1uj2mpfk/iconfont.woff') format('woff'),
+                url('./font_4434862_8ui1uj2mpfk/iconfont.ttf') format('truetype');
+        }
+    .icon {
+            font-family: 'iconfont';
+            font-size: 20px;
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            text-decoration: none;
+            color: #eee;
+        }
         
     </style>
     
@@ -323,6 +345,8 @@ div{
         </div>
     </div>
     <div id="aplayer" class="aplayer-container"></div>
+    <div class="icon">&#xe677;</div>
+    <a id="backLink" href="#">收藏馆</a>
     <script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.js"></script>
     <script>
         const ap = new APlayer({
@@ -402,7 +426,14 @@ div{
             };
         })(jQuery)
     $("#shell").timeline();
-
+    document.getElementById("backLink").addEventListener("click", function(event) {
+    event.preventDefault(); // 阻止默认行为，即阻止超链接的跳转
+    if(document.referrer) {
+        window.location.href = document.referrer; // 将当前页面的 URL 设置为之前页面的 URL
+    } else {
+        alert("没有之前的页面"); // 如果没有之前的页面，则显示警告
+    }
+    });
     </script>
 </body>
 </html>
