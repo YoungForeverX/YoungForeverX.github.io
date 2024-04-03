@@ -107,7 +107,7 @@ theme: butterfly
 deploy:
   type: git 
   repo: git@github.com:YoungForeverX/YoungForeverX.github.io.git
-  branch: master
+  branch: main
   
 aplayer:
   meting: true
