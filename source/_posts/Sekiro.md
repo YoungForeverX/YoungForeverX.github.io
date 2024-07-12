@@ -2,7 +2,7 @@
 title: Sekiro
 date: 2022-12-07 23:35:23
 categories: 游戏
-cover: http://cdn.youngforever.fun/E7kf8lO3DIL4jzc.jpg
+cover: http://cdn.youngforever.fun/d63ce2abea21aa37b4ac5abbb5833d84 (1).jpg
 tag:
 - 游戏
 ---

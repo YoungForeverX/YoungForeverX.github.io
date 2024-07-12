@@ -2,7 +2,7 @@
 layout: title
 title: 寒假
 date: 2024-01-09 14:21:29
-cover: http://cdn.youngforever.fun/微信图片_20240307235119.jpg
+cover: http://cdn.youngforever.fun/微信图片_20240307235119 (1).jpg
 categories: 生活
 tags:
 - 生活

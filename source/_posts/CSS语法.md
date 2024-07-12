@@ -2,7 +2,7 @@
 layout: title
 title: CSS语法
 date: 2023-11-26 11:15:40
-cover: http://cdn.youngforever.fun/fsIm8FGl4QnRSLr.jpg
+cover: http://cdn.youngforever.fun/fsIm8FGl4QnRSLr (1).jpg
 categories: 前端
 tags:
 - CSS

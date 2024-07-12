@@ -3,7 +3,7 @@ layout: title
 title: script中的defer和async
 date: 2024-01-08 14:39:35
 categories: 前端
-cover: https://cdn.youngforever.fun/wallhaven-8586my.png
+cover: http://cdn.youngforever.fun/wallhaven-8586my.jpg
 tags:
 - HTML
 - 前端
