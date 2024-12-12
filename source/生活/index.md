@@ -27,7 +27,13 @@ copyright: false
 
 ![](https://cdn.youngforever.fun/%E6%97%A5%E5%B8%B8%26%E9%A3%8E%E6%99%AF/IMG_8740.JPG)
 
+![](http://cdn.youngforever.fun/CD0F866E4C9EF371D8CA1A1F58519EB0.png)
+
 ![](https://cdn.youngforever.fun/%E6%97%A5%E5%B8%B8%26%E9%A3%8E%E6%99%AF/IMG_8735.JPG)
+
+![](http://cdn.youngforever.fun/BB268AB8E66B6544F089627243ADB9D4.png)
+
+![](http://cdn.youngforever.fun/8A5C84707480CED016EA98C1E9A7AFC9.png)
 
 ![](https://cdn.youngforever.fun/%E6%97%A5%E5%B8%B8%26%E9%A3%8E%E6%99%AF/IMG_8734.JPG)
 
