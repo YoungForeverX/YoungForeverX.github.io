@@ -5,6 +5,8 @@ aside: false
 copyright: false
 ---
 
+## 北京国贸/环球影城/曼联梦剧场
+
 {% gallery %}
 
 ![](https://cdn.youngforever.fun/%E6%97%A5%E5%B8%B8%26%E9%A3%8E%E6%99%AF/IMG_8936.jpg)
@@ -28,5 +30,13 @@ copyright: false
 ![](https://cdn.youngforever.fun/%E6%97%A5%E5%B8%B8%26%E9%A3%8E%E6%99%AF/IMG_8735.JPG)
 
 ![](https://cdn.youngforever.fun/%E6%97%A5%E5%B8%B8%26%E9%A3%8E%E6%99%AF/IMG_8734.JPG)
+
+{% endgallery %}
+
+## 广州
+
+{% gallery %}
+
+![](http://cdn.youngforever.fun/6A264DACCE4870058CDC42DB7B23B42C.png)
 
 {% endgallery %}
