@@ -215,8 +215,8 @@ document.addEventListener('DOMContentLoaded', function () {
       sizeRange: [150, 600],
       useResizeObserver: true,
       observeChildren: true,
-      useTransform: true
-      // useRecycle: false
+      useTransform: true,
+      useRecycle: false
     })
 
     if (tabs) {
