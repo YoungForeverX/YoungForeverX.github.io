@@ -336,6 +336,17 @@ document.addEventListener('DOMContentLoaded', function () {
       await getScript(`${GLOBAL_CONFIG.infinitegrid.js}`)
       init()
     }
+    const requestAppendFn = btf.debounce(e => {
+      const nextGroupKey = (+e.groupKey || 0) + 1
+      appendItem(nextGroupKey, 10)
+    
+      if (nextGroupKey === maxGroupKey) {
+        ig.off('requestAppend', requestAppendFn)
+      }
+    }, 300)
+    
+    ig.on('requestAppend', requestAppendFn)
+    
   }
 
   /**
