@@ -215,8 +215,8 @@ document.addEventListener('DOMContentLoaded', function () {
       sizeRange: [150, 600],
       useResizeObserver: true,
       observeChildren: true,
-      useTransform: true,
-      useRecycle: false
+      useTransform: true
+      // useRecycle: false
     })
 
     if (tabs) {
@@ -255,7 +255,7 @@ document.addEventListener('DOMContentLoaded', function () {
         e.target.removeEventListener('click', buttonFn)
         e.target.remove()
         btf.setLoading.add(item)
-        appendItem(ig.getGroups().length + 1, 10)
+        appendItem(ig.getGroups().length + 1, 35)
       }
 
       button.addEventListener('click', buttonFn)
@@ -336,17 +336,6 @@ document.addEventListener('DOMContentLoaded', function () {
       await getScript(`${GLOBAL_CONFIG.infinitegrid.js}`)
       init()
     }
-    const requestAppendFn = btf.debounce(e => {
-      const nextGroupKey = (+e.groupKey || 0) + 1
-      appendItem(nextGroupKey, 10)
-    
-      if (nextGroupKey === maxGroupKey) {
-        ig.off('requestAppend', requestAppendFn)
-      }
-    }, 300)
-    
-    ig.on('requestAppend', requestAppendFn)
-    
   }
 
   /**
