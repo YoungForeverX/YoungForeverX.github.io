@@ -1,0 +1,100 @@
+{
+  "id": "4784019",
+  "name": "wwww",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "42818015",
+      "name": "背心 2",
+      "font_class": "a-beixin2",
+      "unicode": "e6f0",
+      "unicode_decimal": 59120
+    },
+    {
+      "icon_id": "42818016",
+      "name": "棒球帽-2",
+      "font_class": "bangqiumao-2",
+      "unicode": "e6f1",
+      "unicode_decimal": 59121
+    },
+    {
+      "icon_id": "42818017",
+      "name": "贝雷帽",
+      "font_class": "beileimao",
+      "unicode": "e6f2",
+      "unicode_decimal": 59122
+    },
+    {
+      "icon_id": "42818019",
+      "name": "护目镜",
+      "font_class": "humujing",
+      "unicode": "e6f3",
+      "unicode_decimal": 59123
+    },
+    {
+      "icon_id": "42818020",
+      "name": "短袖",
+      "font_class": "duanxiu",
+      "unicode": "e6f4",
+      "unicode_decimal": 59124
+    },
+    {
+      "icon_id": "42818021",
+      "name": "短袜",
+      "font_class": "duanwa",
+      "unicode": "e6f5",
+      "unicode_decimal": 59125
+    },
+    {
+      "icon_id": "42818024",
+      "name": "胡子",
+      "font_class": "huzi",
+      "unicode": "e6f6",
+      "unicode_decimal": 59126
+    },
+    {
+      "icon_id": "42818030",
+      "name": "手提包-05",
+      "font_class": "shoutibao-05",
+      "unicode": "e6f7",
+      "unicode_decimal": 59127
+    },
+    {
+      "icon_id": "42818037",
+      "name": "脚印",
+      "font_class": "jiaoyin",
+      "unicode": "e6f8",
+      "unicode_decimal": 59128
+    },
+    {
+      "icon_id": "42818040",
+      "name": "钱袋",
+      "font_class": "qiandai",
+      "unicode": "e6f9",
+      "unicode_decimal": 59129
+    },
+    {
+      "icon_id": "42818041",
+      "name": "手套",
+      "font_class": "shoutao",
+      "unicode": "e6fa",
+      "unicode_decimal": 59130
+    },
+    {
+      "icon_id": "42818047",
+      "name": "口红",
+      "font_class": "kouhong",
+      "unicode": "e6fb",
+      "unicode_decimal": 59131
+    },
+    {
+      "icon_id": "42818054",
+      "name": "衣服架",
+      "font_class": "yifujia",
+      "unicode": "e6fc",
+      "unicode_decimal": 59132
+    }
+  ]
+}

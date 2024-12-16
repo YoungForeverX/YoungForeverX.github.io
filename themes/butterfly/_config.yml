@@ -13,10 +13,13 @@ menu:
    档案: /archives/ || fas fa-archive
    标签: /tags/ || fas fa-tags
    归类: /categories/ || fas fa-folder-open
-   收藏馆: /fun1/ || fas fa-images
-  # List||fas fa-list:
-  #   Music: /music/ || fas fa-music
-  #   Movie: /movies/ || fas fa-video
+  #  收藏馆: /fun1/ || fas fa-images
+  #           /fun2/ || fas fa-images
+  #           /fun3/ || fas fa-images
+   收藏馆||fas fa-images:
+     球衣: /fun/ || fas fa-music
+     生活: /fun1/ || fas fa-video
+     画廊: /wallpaper/ || fas fa-video
    捉猫: /cat/ || fas fa-cat
    黑洞(PC端): /black-hole/ || fas fa-star
    # 音乐馆: /music/ || fas fa-music
