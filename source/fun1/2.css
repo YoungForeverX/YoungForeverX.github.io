@@ -122,3 +122,14 @@ body {
 .item.active .content .text div{
     opacity: 1;
 }
+.arrow-left, .arrow-right {
+    font-size: 30px;
+    cursor: pointer;
+    user-select: none;
+    padding: 10px;
+    background-color: #ff7f00;
+    color: white;
+    border-radius: 50%;
+    z-index: 10;
+}
+
