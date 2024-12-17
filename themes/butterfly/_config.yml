@@ -18,7 +18,7 @@ menu:
   #           /fun3/ || fas fa-images
    收藏馆||fas fa-images:
      球衣: /fun/ || fas fa-music
-     生活: /fun1/ || fas fa-video
+     生活: /life/ || fas fa-sun
      画廊: /wallpaper/ || fas fa-video
    捉猫: /cat/ || fas fa-cat
    黑洞(PC端): /black-hole/ || fas fa-star
