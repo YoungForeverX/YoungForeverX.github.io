@@ -33,6 +33,8 @@ skip_render:
   - fun/index.html
   - cat/index.html
   - black-hole/index.html
+  - life/index.html
+
 
 # Writing
 new_post_name: :title.md # File name of new posts
