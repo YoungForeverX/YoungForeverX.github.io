@@ -5,7 +5,6 @@
   <title>Galaxy</title>
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.css">
-  <link rel="icon" href="https://cdn.youngforever.fun/JuT6tMgHsnj4QIi(1)(1).png" type="image/png">
   <style>
     .aplayer-container {
             width: 100%;
@@ -20,12 +19,17 @@
     #backLink {
             position: absolute;
             top: 14px;
-            left: 40px;
-            font-size: 15px;
+            left: 17px;
+            font-size: 17px;
             text-decoration: none;
             color: #eee;
             vertical-align: middle;	
+            font-weight: bold;
         }
+    #backLink:hover {
+        color: #d4bbb7; /* 可以根据需要修改为任何颜色 */
+    }
+        
     @font-face {
             font-family: 'iconfont';
             src: url('./font_4434862_8ui1uj2mpfk/iconfont.woff2') format('woff2'),
@@ -49,8 +53,7 @@
 <div class="experience"></div>
 <!-- partial -->
 <div id="aplayer" class="aplayer-container"></div>
-<div class="icon">&#xe677;</div>
-<a id="backLink" href="#">主页</a>
+<a id="backLink" href="#">BACK</a>
 <script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.js"></script>
 <script>
   const ap1 = new APlayer({

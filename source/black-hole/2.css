@@ -1,0 +1,14 @@
+.home-link:hover {
+    color: #cda296;  /* 鼠标悬停时变成浅灰色 */
+}
+
+.home-link {
+    position: absolute;
+    top: 13px !important;  /* 设置距离页面顶部14px */
+    left: 15px;  /* 设置距离页面左侧20px */
+    font-size: 22px;
+    text-decoration: none;
+    color: #ffffff;
+    z-index: 9999;  /* 确保返回按钮显示在其他元素之上 */
+    font-weight: bold;
+}
