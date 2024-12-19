@@ -130,4 +130,19 @@ body {
     font-size: 30px; /* 增大图标的尺寸 */
     color: #ccc; /* 浅灰色 */
 }
+
+.home-link {
+    position: absolute;
+    top: 15px;  /* 距离页面顶部20px */
+    left: 20px;  /* 距离页面左侧20px */
+    font-size: 18px;  /* 字体大小 */
+    color: #fff;  /* 字体颜色（白色） */
+    text-decoration: none;  /* 去掉下划线 */
+    font-weight: bold;  /* 加粗字体 */
+    transition: color 0.3s;  /* 平滑过渡效果 */
+}
+
+.home-link:hover {
+    color: #527091;  /* 鼠标悬停时变成浅灰色 */
+}
   
