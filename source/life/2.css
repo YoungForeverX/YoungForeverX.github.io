@@ -114,12 +114,20 @@ body {
     width:100%;
 }
 .buttons button{
-    width:50px;
-    height:50px;
-    border-radius: 50%;
-    border:1px solid #555;
+    width:70px;
+    height:70px;
+    /* border-radius: 50%; */
+    /* border:1px solid #555; */
+    border: 2px solid #ccc;  /* 浅灰色边框 */
+    /* border:none; */
+    background-color: transparent; /* 背景透明 */
     transition: 0.5s;
+    border-radius: 0.1;  /* 保持正方形，没有圆角 */
 }.buttons button:hover{
-    background-color: #bac383;
+    background-color: #f0f0f0;
+}
+.buttons button i {
+    font-size: 30px; /* 增大图标的尺寸 */
+    color: #ccc; /* 浅灰色 */
 }
   
