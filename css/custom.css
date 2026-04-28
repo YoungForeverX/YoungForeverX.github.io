@@ -1,0 +1,212 @@
+/* 一图流核心样式 */
+/* 让页脚和头部背景透明 */
+#footer {
+    background: transparent !important;
+}
+#page-header {
+    background: transparent !important;
+}
+
+/* 调整头部遮罩，让背景图更清晰（白天模式） */
+[data-theme="light"] #page-header::before {
+    background-color: rgba(0, 0, 0, 0.1) !important;
+    z-index: -3;
+}
+/* 调整头部遮罩（夜间模式） */
+[data-theme="dark"] #page-header::before {
+    background: transparent !important;
+}
+
+/* 阅读模式下的背景优化 */
+.read-mode #aside-content .card-widget {
+    background: rgba(255, 255, 255, 0.9) !important;
+}
+.read-mode div#post {
+    background: rgba(255, 255, 255, 0.9) !important;
+}
+
+
+
+:root {
+  --trans-light: rgba(255, 255, 255, 0.2);
+  --trans-dark: rgba(25, 25, 25, 0.3);
+  --border-style: 2px solid rgb(169, 169, 169);
+  --backdrop-filter: blur(5px) saturate(150%);
+}
+
+/* 首页文章卡片 */
+
+.recent-post-item {
+  background: var(--trans-light) !important;
+  backdrop-filter: var(--backdrop-filter) !important;
+  border-radius: 25px !important;
+  border: var(--border-style) !important;
+}
+
+/* 首页侧栏卡片 */
+#aside-content .card-widget {
+  background: var(--trans-light);
+  backdrop-filter: var(--backdrop-filter);
+  border-radius: 18px;
+  border: var(--border-style);
+}
+
+/* 文章页、归档页、普通页面 */
+div#post,
+div#page,
+div#archive {
+  background: var(--trans-light);
+  backdrop-filter: var(--backdrop-filter);
+  border: var(--border-style);
+  border-radius: 20px;
+}
+
+/* 导航栏 */
+#page-header.nav-fixed #nav {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: var(--backdrop-filter);
+}
+
+[data-theme="dark"] #page-header.nav-fixed #nav {
+  background: rgba(0, 0, 0, 0.7) ;
+}
+
+/* 夜间模式遮罩 */
+[data-theme="dark"] #recent-posts > .recent-post-item,
+[data-theme="dark"] #aside-content .card-widget,
+[data-theme="dark"] div#post,
+[data-theme="dark"] div#archive,
+[data-theme="dark"] div#page {
+  background: var(--trans-dark);
+}
+
+/* 夜间模式页脚页头遮罩透明 */
+[data-theme="dark"] #footer::before {
+  background: transparent ;
+}
+
+[data-theme="dark"] #page-header::before {
+  background: transparent ;
+}
+
+/* 阅读模式 */
+.read-mode #aside-content .card-widget {
+  background: rgba(158, 204, 171, 0.5) ;
+}
+
+.read-mode div#post {
+  background: rgba(158, 204, 171, 0.5) ;
+}
+
+/* 夜间模式下的阅读模式 */
+[data-theme="dark"] .read-mode #aside-content .card-widget {
+  background: rgba(25, 25, 25, 0.9) ;
+  color: #ffffff;
+}
+
+[data-theme="dark"] .read-mode div#post {
+  background: rgba(25, 25, 25, 0.9) ;
+  color: #ffffff;
+}
+
+/*-------------------------------------------------- 统一调整所有主要区域的文字颜色为白色/浅色 */
+#recent-posts .recent-post-item,
+#aside-content .card-widget,
+div#post,
+div#page,
+div#archive {
+  color: #f0f0f0 !important;  /* 浅白色正文 */
+}
+
+/* 文章标题 - 白色加粗 */
+.recent-post-item .post-title-link,
+.post-title-link {
+  color: #ffffff !important;
+  font-weight: 600;
+}
+
+/* 文章元信息（日期、分类等）- 浅灰色 */
+.recent-post-item .post-meta,
+.post-meta__item,
+.post-meta__date,
+.post-meta__categories {
+  color: #cccccc !important;
+  opacity: 0.9;
+}
+
+/* 侧边栏小标题 */
+.card-widget .item-headline {
+  color: #ffffff !important;
+}
+
+/* 侧边栏内容文字 */
+.card-widget .webinfo-item,
+.card-widget .item-name,
+.card-widget .item-count {
+  color: #e0e0e0 !important;
+}
+
+/* 文章内链接颜色 - 亮色突出但不刺眼 */
+#article-container a {
+  color: #66ccff !important;
+  border-bottom-color: rgba(102, 204, 255, 0.3);
+}
+
+#article-container a:hover {
+  color: #ffffff !important;
+}
+
+/* 文章内正文段落 */
+#article-container p {
+  color: #eeeeee !important;
+}
+
+/* 文章内标题 */
+#article-container h1,
+#article-container h2,
+#article-container h3,
+#article-container h4,
+#article-container h5,
+#article-container h6 {
+  color: #ffffff !important;
+}
+
+/* 文章内的列表文字 */
+#article-container li,
+#article-container ul p,
+#article-container ol p {
+  color: #e8e8e8 !important;
+}
+
+/*------------------------------自定义字体-----------------------------------------*/
+@font-face {
+  /* 为载入的字体取名字(随意) */
+  font-family: 'YSHST';
+  /* 字体文件地址(相对或者绝对路径都可以) */
+  src: url(https://picgo1-1316321028.cos.ap-guangzhou.myqcloud.com/SmileySans-Oblique.otf.woff2);
+  /* 定义加粗样式(加粗多少) */
+  font-weight: normal;
+  /* 定义字体样式(斜体/非斜体) */
+  font-style: normal;
+  /* 定义显示样式 */
+  font-display: block;
+}
+
+/*------------------------------去除黑夜模式下的背景图遮罩--------------------------------*/
+/* 去除深色模式下的背景遮罩层 */
+[data-theme="dark"] #web_bg::before {
+  background: transparent !important;
+  opacity: 0 !important;
+}
+
+/* 如果上述代码无效，尝试这个更彻底的方式 */
+[data-theme="dark"] #web_bg {
+  filter: brightness(1) !important;
+}
+
+/* 去除可能存在的额外叠加层 */
+[data-theme="dark"] #page-header::before,
+[data-theme="dark"] #footer::before {
+  background: transparent !important;
+  opacity: 0 !important;
+}
