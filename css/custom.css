@@ -215,3 +215,5 @@ div#archive {
 .card-announcement .item-headline i {
     display: none !important;
 }
+.card-announcement .item-headline span {
+    color: #49B1F5 !important; }
