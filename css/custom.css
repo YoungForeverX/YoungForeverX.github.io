@@ -210,3 +210,8 @@ div#archive {
   background: transparent !important;
   opacity: 0 !important;
 }
+
+/* 隐藏公告栏的喇叭图标 */
+.card-announcement .item-headline i {
+    display: none !important;
+}
